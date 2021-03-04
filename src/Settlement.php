@@ -24,7 +24,7 @@ class Settlement
      * @param null $data 数据
      * @param int $num 次数
      * @param null $date_time 时间
-     * @return
+     * @return Boolean
      */
     public function addData($tagId, $data = null, $num = 1, $date_time = null)
     {
