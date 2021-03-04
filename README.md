@@ -1,6 +1,6 @@
 <h1 align="center"> settlement </h1>
 
-<p align="center"> 数据埋点.</p>
+<p align="center"> 题目2：数据埋点.</p>
 
 
 ## Installing
@@ -11,7 +11,25 @@ $ composer require zcold/settlement -vvv
 
 ## Usage
 
-TODO
+> 1、助手函数
+```
+settlementAddData($tagId, $data, $num, $time)
+```
+
+> 2、对象
+```
+
+$s = new Zcold\Settlement\Settlement();
+/**
+ * @param int $tagId 场景id
+ * @param null $data 数据
+ * @param int $num 次数
+ * @param null $date_time 时间
+ * @return bool
+ */
+$s->addData(1, [{user_id:1}, 1, '2021-03-04 10:15:00']);
+```
+
 
 ## Contributing
 
